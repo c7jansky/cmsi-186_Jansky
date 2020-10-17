@@ -2,13 +2,13 @@ import java.text.DecimalFormat;
 import java.lang.Math;
 
 public class SoccerSim {
-    
+
     private static final double DEFAULT_FIELD_WIDTH   = 1000.0;
     private static final double DEFAULT_FIELD_HEIGHT  = 1000.0;
     private static final double DEFAULT_POLE_X_POS    = 321.0;
     private static final double DEFAULT_POLE_Y_POS    = 543.0;
     private static final double DEFAULT_TIME_SLICE    = 1.0;
- 
+
     private boolean  initialReport      = true;
     private boolean  stillMoving        = true;
     private boolean  timeSliceDefault   = true;
@@ -18,7 +18,7 @@ public class SoccerSim {
     private double[] fieldSizes         = null;
     private double[] poleLocation       = null;
     private int      ballCount          = 0;
- 
+
     private Ball[]   soccerBalls        = null;
     private Clock    c                  = null;
 
@@ -31,8 +31,8 @@ public class SoccerSim {
          "\n    this should produce a collision between the first two balls in about four iterations." +
          "\n\n  Please try again.";
     Clock clock = new Clock();
-    private int 1collision = 0;
-    private int 2collision = 0;
+    private int collision1 = 0;
+    private int collision2 = 0;
     double [] locationOfCollision1 = null;
     double [] locationOfCollision2 = null;
     public SoccerSim() {
@@ -50,12 +50,12 @@ public class SoccerSim {
                 System.out.println(USAGE_MESSAGE);
                 System.exit(0);
             }
-            
 
-        } 
+
+        }
         else{
             if( 1 == (arguments.length % 4) ) {
-                    
+
                 try{
                     timeSlice = Clock.validateTimeSliceArg(arguments[arguments.length -1]);
                 }
@@ -64,6 +64,7 @@ public class SoccerSim {
                         System.exit(0);
                 }
             }
+         }
 
          ballCount = (int)Math.floor(arguments.length/4);
          soccerBalls = new Ball[ballCount];
@@ -114,17 +115,17 @@ public class SoccerSim {
         for ( int i = 0; i < soccerBalls.length - 1; i++ ) {
             double radius = 4.45;
             double distance;
-            double [] 1ball = soccerBalls[i].getPosition();
-            double [] 2ball = soccerBalls[j].getPosition();
-            double 1ballx = 1ball[0];
-            double 1bally = 1ball[1];
-            double 2ballx = 2ball[0];
-            double 2bally = 2ball[1];
-            distance = Math.sqrt((2ballx - 1ballx)*(2ballx - 1ballx) + (2bally - 1bally)*(2bally - 1bally));
+            double[] ball1 = soccerBalls[i].getPosition();
+            double[] ball2 = soccerBalls[j].getPosition();
+            double ball1x = ball1[0];
+            double ball1y = ball1[1];
+            double ball2x = ball2[0];
+            double ball2y = ball2[1];
+            distance = Math.sqrt((ball2x - ball1x)*(ball2x - ball1x) + (ball2y - ball1y)*(ball2y - ball1y));
             distance = distance*12;
             if ( distance <= radius * 2) {
-                1collision = i;
-                2collision = j;
+                collision1 = i;
+                collision2 = j;
                 ballsCollided[0] = i;
                 ballsCollided[1] = j;
                 locationOfCollision1 = soccerBalls[ballsCollided[0]].getPosition();
@@ -133,19 +134,19 @@ public class SoccerSim {
             }
         }
         for ( int j = i + 1; j < soccerBalls.length; j++) {
-            double radius = 4.45
+            double radius = 4.45;
             double distance;
-            double [] 1ball = soccerBalls[i].getPosition();
-            double [] 2ball = soccerBalls[j].getPosition();
-            double 1ballx = 1ball[0];
-            double 1bally = 1ball[1];
-            double 2ballx = 2ball[0];
-            double 2bally = 2ball[1];
-            distance = Math.sqrt((2ballx - 1ballx)*(2ballx - 1ballx) + (2bally - 1bally)*(2bally - 1bally));
+            double [] ball1 = soccerBalls[i].getPosition();
+            double [] ball2 = soccerBalls[j].getPosition();
+            double ball1x = ball1[0];
+            double ball1y = ball1[1];
+            double ball2x = ball2[0];
+            double ball2y = ball2[1];
+            distance = Math.sqrt((ball2x - ball1x)*(ball2x - ball1x) + (ball2y - ball1y)*(ball2y - ball1y));
             distance = distance*12;
             if ( distance <= radius * 2) {
-                1collision = i;
-                2collision = j;
+                collision1 = i;
+                collision2 = j;
                 ballsCollided[0] = i;
                 ballsCollided[1] = j;
                 locationOfCollision1 = soccerBalls[ballsCollided[0]].getPosition();
@@ -154,7 +155,7 @@ public class SoccerSim {
                     break outer;
             }
         }
-        
+
         return ballsCollided;
     }
 
@@ -194,7 +195,7 @@ public class SoccerSim {
            System.out.println( USAGE_MESSAGE );
            System.exit( 2 );
         }
-  
+
         ss.report();
         while( true ) {
            ss.simUpdate();
