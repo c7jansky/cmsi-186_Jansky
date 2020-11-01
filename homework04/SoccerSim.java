@@ -57,10 +57,12 @@ public class SoccerSim {
             if( 1 == (arguments.length % 4) ) {
 
                 try{
-                    timeSlice = Clock.validateTimeSliceArg(arguments[arguments.length -1]);
+//                    timeSlice = Clock.validateTimeSliceArg(arguments[arguments.length -1]);
+                    timeSlice = clock.validateTimeSliceArg(arguments[arguments.length -1]);
                 }
                 catch (Exception e) {
-                        system.out.println(USAGE_MESSAGE);
+//                        system.out.println(USAGE_MESSAGE);
+                        System.out.println(USAGE_MESSAGE);
                         System.exit(0);
                 }
             }
@@ -85,7 +87,7 @@ public class SoccerSim {
     }
 
     public void report() {
-      clock.tick(timeSlice);
+//      clock.tick(timeSlice);
       clock.toString();
         for ( int i = 0; i < soccerBalls.length; i++ ){
             this.soccerBalls[i].move(timeSlice);
@@ -98,7 +100,8 @@ public class SoccerSim {
     public void simUpdate() {
         report();
         boolean moveStatus = atLeastOneBallStillMoving();
-        Collision();
+//        Collision();
+        collisionCheck();
         if (moveStatus == false || Collision == true) {
             if (moveStatus == false){
                 System.out.print( "All balls have stopped moving. This occurred at:"+ clock.toString() + "");

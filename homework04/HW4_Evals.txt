@@ -73,22 +73,22 @@ main(tests)             : optional, freebie point           - [1 point]
 
 class SoccerSim         : exists and compiles no errors     - 1 point
 constructor             : exists, sets up simulation        - 1 point
-validateArgs            : exists, may be done in main()     - 1 point
-report                  : exists, may be done in main()     - 1 point
-collision detect        : exists, may be done in main()     - 1 point
+validateArgs            : exists, may be done in main()     - 0.5 point
+report                  : exists, may be done in main()     - 0.5 point
+collision detect        : exists, may be done in main()     - 0.5 point
 main                    : exists runs simulation            - 1 point
-param checks (4)        : checks count, type, tick value    - 4 point
-test comes to rest      : works per test batch file         - 1 point
-test collision          : works per test batch file         - 1 point
-remaining tests (3)     : works per test batch file         - 3 point
+param checks (4)        : checks count, type, tick value    - 0.5 point
+test comes to rest      : works per test batch file         - 0.5 point
+test collision          : works per test batch file         - 0.5 point
+remaining tests (3)     : works per test batch file         - 0.5 point
 
-Files in Git (2)        : Ball.java and SoccerSim.java      - 2 point
+Files in Git (3)        : Ball.java and SoccerSim.java      - 3 point
 Coding Style (5)        : indentation, naming, comments     - 5 point
 
 
 Total 36 points possible:
 
-YOUR SCORE:  36 out of 37 = 100% which is an A-plus
+YOUR SCORE:  27.5 out of 37 = 74.32% which is a solid C.
 
 Detailed omments:
 =================
@@ -97,7 +97,7 @@ which I corrected for you by changing the variable name "currPosition" to
 "currLocation" which was what was defined.  That correction revealed another
 error at line 43, where you have a call to "System.exit()" after you have
 thrown a new exception, which makes the exit() call unreachable.  I fixed
-that by commenting in out and now your Ball.java code compiles.
+that by commenting it out and now your Ball.java code compiles.
 
 There is no main in your Ball.java file so there are no tests for the Ball
 class.
