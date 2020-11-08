@@ -88,7 +88,7 @@ Coding Style (5)        : indentation, naming, comments     - 5 point
 
 Total 36 points possible:
 
-YOUR SCORE:  27.5 out of 37 = 74.32% which is a solid C.
+YOUR SCORE:  24 out of 37 = 64.86% which is a D.
 
 Detailed omments:
 =================
@@ -129,4 +129,12 @@ hours any time, or log in to the discord channels for help from a Computer
 Science TA.  There are also probably tutors available through the Academic
 Resource Center.  Please don't be shy about reaching out to me... your
 success is important to me!
+
+=====================
+Updated 2020-11-08
+I took another look, but you haven't done any further work on this.  I will
+evaluate it now, with the caveat that if you want to re-visit this one, and
+have the time to do so, I'll revise the evaluation at that time.
+
+For now, unfortunately, you have earned:  24 out of 37 = 64.86% which is a D.
 
