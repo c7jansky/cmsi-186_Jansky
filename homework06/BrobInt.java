@@ -27,10 +27,10 @@ public class BrobInt {
         
         //System.out.println(plus(firstNum, secondNum));
         
-        System.out.println(N1.plus(N2));
-        System.out.println(N1.minus(N2));
-        System.out.println(N1.multipliedBy(N2));
-        System.out.println(N1.dividedBy(N2));
+        //System.out.println(N1.plus(N2));
+        //System.out.println(N1.minus(N2));
+        //System.out.println(N1.multipliedBy(N2));
+        //System.out.println(N1.dividedBy(N2));
         
         //System.out.println(Num1.makeStrings());
     }
