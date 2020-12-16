@@ -1,0 +1,8 @@
+Essentially they way I attacked this problem is first by calculating for the actual probability by making a formula that solves such an issue. The formula I made is:
+Probability that two students match: (1 - (((365!)/((365-N)!))/((365)^N)). With this formula I made a method for each portion of the formula starting with the factorial 
+calculator. Then I made a method for the demonitor of the whole equation. After this, a method for the numerator of the numerator. To solve the top fraction, I made three
+more methods for the 365 - N, thats factorial which made the numerators denominator, and finally the method that divides the numerators fractionto get a number. Finallly,
+I made a method to calculate the total fraction division, and following that I made a method that would subtract it all from one to get a percentage in the form of a decimal.
+Each calculation used BigInteger() of BigDecimal(). After this, I made the experimentation by creating a methodd that chose a random N and a random k (number of trials) from 
+1-100000. This then repeated the trial calculation k times, and each time with a different k that gave the value, and allowed for an approximation of birthday probability 
+based on the data as it kept count of each time it repeated a birthday divided by the number of trials times 100 for the final probability.
