@@ -864,15 +864,11 @@ public Boolean equalTo(String Num1, String Num2){
 
 //--------------------------------------------------------------------
 
-public String valueOf(){
+public String valueOf(long val){
     
-    return this.operationValue;
-    
-}
+    String s = String.valueOf(val);
 
-public void getValue(String operationValue){
-    
-    this.operationValue = operationValue;
+    return s;
     
 }
 
