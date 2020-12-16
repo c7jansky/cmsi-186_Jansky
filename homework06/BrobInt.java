@@ -135,6 +135,27 @@ public class BrobInt {
         
         return Answer;
     }
+    
+    public BrobInt ZERO(){
+        
+        BrobInt ZERO = new BrobInt("0");
+        
+        return ZERO;  
+    }
+
+    public BrobInt ONE(){
+        
+        BrobInt ONE = new BrobInt("1");
+        
+        return ONE;  
+    }
+
+    public BrobInt TEN(){
+        
+        BrobInt TEN = new BrobInt("10");
+        
+        return TEN;  
+    }
    
     public String sum(String Num1, String Num2) {
         
