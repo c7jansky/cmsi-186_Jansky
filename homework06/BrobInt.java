@@ -48,6 +48,18 @@ public class BrobInt {
      
     }
     
+    public String compare (BrobInt Num){
+
+        String x = this.toString();
+        
+        String y = Num.toString();
+
+        String Answer = compareTo(x, y);
+        
+        return Answer;
+
+    }
+    
     public String plus(BrobInt Num){
         
         String x = this.toString();
