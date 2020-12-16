@@ -48,7 +48,7 @@ public class BrobInt {
      
     }
     
-    public String compare (BrobInt Num){
+    public String compare(BrobInt Num){
 
         String x = this.toString();
         
