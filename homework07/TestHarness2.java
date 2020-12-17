@@ -195,7 +195,7 @@ public class TestHarness {
             System.out.println("=====================================================");
             System.out.println("=====================================================");
             
-            System.out.println("GENERATING 30 RANDOM DIGITS FROM 1-500 FOR ARGS[0] AND 1-100,000 FOR ARGS[1]");
+            System.out.println("GENERATING 29 RANDOM DIGITS FROM 1-500 FOR ARGS[0] AND 1-100,000 FOR ARGS[1]");
             
             System.out.println("=====================================================");
             System.out.println("=====================================================");
