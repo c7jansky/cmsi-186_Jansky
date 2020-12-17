@@ -195,7 +195,7 @@ public class TestHarness {
             System.out.println("=====================================================");
             System.out.println("=====================================================");
             
-            System.out.println("GENERATING 30 RANDOM DIGITS FROM 1-100,000 FOR ARGS[0] AND 1-10,000 FOR ARGS[1]");
+            System.out.println("GENERATING 29 RANDOM DIGITS FROM 1-10,000 FOR ARGS[0] AND 1-10,000 FOR ARGS[1]");
             
             System.out.println("=====================================================");
             System.out.println("=====================================================");
@@ -206,7 +206,7 @@ public class TestHarness {
             
             while (i < 30) {
             
-                int RandInt1 = (int)(Math.random() * (99999 - 1 + 1) + 1);
+                int RandInt1 = (int)(Math.random() * (9999 - 1 + 1) + 1);
                 
                 int RandInt2 = (int)(Math.random() * (9999 - 1 + 1) + 1);
                 
