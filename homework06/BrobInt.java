@@ -48,13 +48,13 @@ public class BrobInt {
      
     }
     
-    public String compare(BrobInt Num){
+    public int compare(BrobInt Num){
 
         String x = this.toString();
         
         String y = Num.toString();
-
-        String Answer = compareTo(x, y);
+        
+        int Answer = compareTo(x, y);
         
         return Answer;
 
@@ -131,7 +131,7 @@ public class BrobInt {
         
         String y = Num.toString();
         
-        String Answer = (x, y);
+        Boolean Answer = equalTo(x, y);
         
         return Answer;
     }
@@ -267,7 +267,7 @@ public class BrobInt {
                 }  while (Answer.charAt(0) == '0');
                 
                 
-                if (!Answer.equalTo(true) && negEnd) {
+                if (negEnd != true && negEnd) {
                     Answer = "-" + Answer;
                 }
                 return Answer;
