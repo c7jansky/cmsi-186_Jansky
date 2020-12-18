@@ -83,68 +83,71 @@ public class Neptune {
 
         // End of Math for T1
 
-        //Math for T2=============================================================
+       //Math for T2=============================================================
 
-        BrobInt t2nn1 = new BrobInt( q2.multipliedBy(c22) );
+       BrobInt t2nn1 = new BrobInt( q2.multipliedBy(c22) );
 
-        BrobInt t2nn12 = new BrobInt( t2nn1.minus(t1b2) ); 
+       BrobInt t2nn12 = new BrobInt( t2nn1.minus(t1b2) ); 
 
-        BrobInt t2nn = new BrobInt( t2nn12.minus(q2q23500) ); 
+       BrobInt t2nn = new BrobInt( t2nn12.minus(q2q23500) ); 
 
-        BrobInt t2r = new BrobInt( t2nn.dividedBy(a2) );
+       BrobInt t2r = new BrobInt( t2nn.dividedBy(a2) );
 
-        BrobInt t2n = new BrobInt( q0.minus(t2r) ); 
+       BrobInt t2n = new BrobInt( q0.minus(t2r) ); 
 
-        BrobInt T2 = new BrobInt( t2n.dividedBy(c1800));
+       BrobInt T2 = new BrobInt( t2n.dividedBy(c1800));
 
-        //End of Math for T2
+       //End of Math for T2
 
-        //Math for T3 ===========================================================
+       //Math for T3 ===========================================================
+       
+       BrobInt t3nn = new BrobInt( q2q23500.minus(c22) ); 
+
+       BrobInt t3c = new BrobInt( t3nn.dividedBy(a2) ); 
+
+       BrobInt t34ac = new BrobInt( t14a.multipliedBy(t3c) ); 
+
+       BrobInt t3r = new BrobInt( c22.minus(t34ac) ); 
+
+       String t3rs = c22.minus(t34ac);
+
+       BigInteger sqrtt3r = new BigInteger( t3rs );
+       
+       BigInteger squareRoot3 = sqrtt3r.sqrt();
+       
+       //BigInteger squareRoot3 = t3rs.sqrt();
+
+       String t3Sqrt = squareRoot3.toString();
+
+       BrobInt t3tr = new BrobInt(t3Sqrt);
+
+       BrobInt t3t = new BrobInt( c_2.multipliedBy(t3tr));
+
+       BrobInt T3 = new BrobInt( t3t.dividedBy(a_3600) );
+
+       //End of Math for T3
+
+       // Math to find Time==================
+
+       BrobInt T12 = new BrobInt( T1.plus(T2) );
+       
+       BrobInt T123 = new BrobInt( T12.plus(T3) );
+
+       BrobInt FinalTime  = new BrobInt( T123.multipliedBy(q2) );
+
+       BrobInt a_min = new BrobInt( "5106" );
+
+       int Check = a.compare(a_min);
+
+       if (Check < 0){
+           System.out.println("Please make sure your input is equal to 5107 or greater.");
+       } else {
+
+           System.out.println(" The amount of time it took to travel from Earth to Neptune and back, given that we accelerated and decelerated into atmospheres at " + a.toString() + "m/s,");
+           System.out.println(" took approximately " + FinalTime.toString() + " seconds!");
+
+       }
         
-        BrobInt t3nn = new BrobInt( q2q23500.minus(c22) ); 
-
-        BrobInt t3c = new BrobInt( t3nn.dividedBy(a2) ); 
-
-        BrobInt t34ac = new BrobInt( t14a.multipliedBy(t3c) ); 
-
-        BrobInt t3r = new BrobInt( c22.minus(t34ac) ); 
-
-        String t3r = c22.minus(t34ac);
-
-        BigInteger sqrtt3r = new BigInteger( t3r );
-
-        BigInteger squareRoot3 = sqrtt3r.sqrt();
-
-        String t3Sqrt = squareRoot3.toString();
-
-        BrobInt t3tr = new BrobInt(t3Sqrt);
-
-        BrobInt t3t = new BrobInt( c_2.multipliedBy(t3tr));
-
-        BrobInt T3 = new BrobInt( t3t.dividedBy(a_3600) );
-
-        //End of Math for T3
-
-        // Math to find Time==================
-
-        BrobInt T12 = new BrobInt( T1.plus(T2) );
-        
-        BrobInt T123 = new BrobInt( T12.plus(T3) );
-
-        BrobInt FinalTime  = new BrobInt( T123.times(q2) );
-
-        BrobInt a_min = new BrobInt( "5106" );
-
-        int Check = a.compareTo(a_min);
-
-        if (Check < 0){
-            System.out.println("Please make sure your input is equal to 5107 or greater.");
-        } else {
-
-            System.out.println(" The amount of time it took to travel from Earth to Neptune and back, given that we accelerated and decelerated into atmospheres at " + a.toString() + "m/s,");
-            System.out.println(" took approximately " + FinalTime.toString() + " seconds!");
-
-        }
         
 
 
