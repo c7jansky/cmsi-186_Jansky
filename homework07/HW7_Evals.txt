@@ -1,0 +1,80 @@
+
+Evaluation for homework 07: BirthdaySolver.java
+
+BirthdaySolver class file requirements
+   template file, provided with javadoc already done
+   you must handle input from the command line
+   you must handle an optional argument for # experiments
+   you must provide user feedback for lengthy computation
+   you must check for errors in the input arguments
+   you must output two numbers: actual vs. estimated
+   you must have a test harness with at least 20 tests
+   you must output the results to a "testresults.txt" file
+   you must write a paragraph analyzing your observations
+
+==========================================================
+
+Class BirthdaySolver
+BirthdaySolver.java                 1.00/ 1.00
+BirthdaySolver compiles             1.00/ 1.00
+constructor() [gimme]               1.00/ 1.00
+handleInput() [2 pts]               1.50/ 2.00
+calculation [5 pts]                 5.00/ 5.00
+estimation [5 pts]                  5.00/ 5.00
+"run so far" code                   1.00/ 1.00
+test harness exists                 1.00/ 1.00
+20 tests [20 pts]                  20.00/20.00
+javadocs                            0.50/ 1.00
+testresults.txt file                1.00/ 1.00
+research report                     1.00/ 1.00
+minimum 4 files in repo             4.00/ 4.00
+coding style                        1.00/ 1.00
+
+
+Total possible score: 45 points
+
+Your score:  44 of 45 = 97.78% which is an A-plus
+
+Evaluation
+==========
+OK, this looks like it's working, although not strictly by the requirements
+that were listed on the specification and discussed in class.
+
+Your BirthdaySolver seems to work correctly, although you don't say which of
+the two values is which.  One thing that is missing is you were supposed to
+handle a default value of 100,000 experiments if there is only one input on
+the command line.  Instead, when I only enter one number I get an exception.
+So you only earned 1.5 points on that part.  I didn't see any signs on the
+output of your program telling the user to "be patient".....
+
+Next, the test harness was supposed to be a batch file or shell script, not
+a full Java program.  However, since you have written not one but two, I'll
+use yours for evaluation.  The first thing I notice is, you have two files,
+one called TestHarness1.java and the other TestHarness2.java.  However, your
+code for both just references "TestHarness" so it won't compile the way it
+is.  I fixed those errors and now there are two class files.
+
+However, when I try to run them, I get an error:
+
+error: Class names, 'TestHarness1', are only accepted if annotation processing is explicitly requested
+1 error
+
+I have NO idea what that is about.  To try to get things working, I put a
+copy of my own batch file test script in your directory and ran that instead
+to produce the "testresults.txt" file that the problem statement asks for.
+The testresults.txt file that resulted is included in your directory which I
+committed.
+
+Your write-up is a good explanation of what you did and how you thought the
+problem through!  Nice work on that!
+
+Finally, there was a warning on your javadoc creation run.  I mentioned in
+class that you should make sure the tool runs "clean" with no errors and no
+warnings.
+
+You did a lot of work on this, Chris.  I wish, though, that you had asked a
+few more questions to make sure you understood the assignment and what was
+expected.  Nevertheless, I think you did OK on this one, so except for a
+little bit for the input argument handling, you've got the full magilla!
+
+Well done!

@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.*;
 import java.text.DecimalFormat;
-import java.math.BigInteger; 
+import java.math.BigInteger;
 
 
 
@@ -185,9 +185,9 @@ import java.math.BigInteger;
 
       try {
          System.out.println( "    Test " + df.format( testNumber++ ) + ": Now testing 'valueOf()' method: " );
-         
+
          String Long1 = valueOf(long01);
-         
+
          g8  = BrobInt.valueOf( Long1 );
          g9  = BrobInt.valueOf( long02 );
          g10 = BrobInt.valueOf( long03 );
@@ -571,24 +571,22 @@ import java.math.BigInteger;
       }
       catch( Exception e ) { System.out.println( "        Exception thrown: could not multiply objects " + e.toString() ); }
 
-      /*System.out.println( "\n    Test " + df.format( testNumber++ ) + ": Multiplying 82832833 by 3 and adding 1: " );
+      System.out.println( "\n    Test " + df.format( testNumber++ ) + ": Multiplying 82832833 by 3 and adding 1: " );
       try {
          System.out.println( "      expecting: 248498500\n" +
-                             "        and got: " + new BrobInt("82832833").multipliedBy( new BrobInt( "3" ) );//.plus( BrobInt.ONE ) );
+                             "        and got: " + new BrobInt( new BrobInt("82832833").multipliedBy( new BrobInt( "3" ) ) ).plus( BrobInt.ONE ) );
       }
       catch( Exception e ) { System.out.println( "        Exception thrown: could not multiply objects " + e.toString() ); }
 
-*/
-
-      /*System.out.println( "\n\n    TESTING ALLZERODETECT() METHOD:\n" +
+      System.out.println( "\n\n    TESTING ALLZERODETECT() METHOD:\n" +
                           "    ===============================" );
-      System.out.println( "\n    Test " + df.format( testNumber++ ) + ": allZeroDetect(0000000): " );
-      try {
-         System.out.println( "      expecting: true\n" +
-                             "        and got: " + BrobInt.TEN.allZeroDetect( new BrobInt( "0000000" ) ) );
-      }
-      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
-      */
+//      System.out.println( "\n    Test " + df.format( testNumber++ ) + ": allZeroDetect(0000000): " );
+//      try {
+//         System.out.println( "      expecting: true\n" +
+//                             "        and got: " + BrobInt.TEN.allZeroDetect( new BrobInt( "0000000" ) ) );
+//      }
+//      catch( Exception e ) { System.out.println( "        Exception thrown:  " + e.toString() ); }
+
       System.out.println( "\n\n    TESTING DIVIDE() METHOD:\n" +
                           "    ========================" );
       System.out.println( "\n    Test " + df.format( testNumber++ ) + ": Dividing g19 by g20 [56789 / 37]: " );
@@ -613,13 +611,13 @@ import java.math.BigInteger;
       }
       catch( Exception e ) { System.out.println( "        Exception thrown: Could not divide objects " + e.toString() ); }
 
-      System.out.println( "\n    Test " + df.format( testNumber++ ) + ": Dividing 10000 by 2: " );
-      BrobInt tenK = new BrobInt( "10000" );
-      try {
-         System.out.println( "      expecting: 5000\n" +
-                             "        and got: " + tenK.dividedBy( BrobInt.TWO ) );
-      }
-      catch( Exception e ) { System.out.println( "        Exception thrown: Could not divide objects " + e.toString() ); }
+//      System.out.println( "\n    Test " + df.format( testNumber++ ) + ": Dividing 10000 by 2: " );
+//      BrobInt tenK = new BrobInt( "10000" );
+//      try {
+//         System.out.println( "      expecting: 5000\n" +
+//                             "        and got: " + tenK.dividedBy( BrobInt.TWO ) );
+//      }
+//      catch( Exception e ) { System.out.println( "        Exception thrown: Could not divide objects " + e.toString() ); }
 
       System.out.println( "\n\n    TESTING REMAINDER() METHOD:\n" +
                           "    ===========================" );

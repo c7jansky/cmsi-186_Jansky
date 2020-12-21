@@ -4,10 +4,10 @@ import java.math.*;
 import java.util.Random;
 import java.util.Arrays;
 
-public class TestHarness {
+public class TestHarness2 {
     public static void main(String args[]) {
         
-        TestHarness("hello");
+        TestHarness2("hello");
             
     }
     
@@ -185,7 +185,7 @@ public class TestHarness {
             
     } 
     
-    public static String TestHarness(String O){
+    public static String TestHarness2(String O){
         
         //String O = "useless";
             

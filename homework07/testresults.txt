@@ -1,0 +1,186 @@
+=====================================================                             
+Testing the BirthdaySolver Project Homework # 07                                 
+=====================================================                             
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #1                                                                           
+... checking running with no arguments on command line                            
+...   should either throw exceptions which will not appear in the output file     
+...     but which should be caught to keep the test program running               
+...   or preferably output error messages which SHOULD appear there then quit     
+=============================================================================     
+1.000000000000000000000000000000000000000
+65.300
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #2                                                                           
+... checking running with bogus argument value on command line                    
+...   should either throw exceptions which will not appear in the output file     
+...     but which should be caught to keep the test program running               
+...   or preferably output error messages which SHOULD appear there then quit     
+=============================================================================     
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #3                                                                           
+... checking running with one arguments to check default # experiments            
+...   should produce valid outputs of about 100%                                 
+=============================================================================     
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #4                                                                           
+... checking running with one arguments to check commanded # experiments          
+...   should produce valid outputs of 100%                                       
+=============================================================================     
+0.9999996927510721
+96.3600
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #5                                                                           
+... checking running with one arguments to check person count 
+...   should produce valid outputs of 100%                                       
+=============================================================================     
+1.000000000000000000000000000000000000000
+96.3600
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #6                                                                           
+... checking running with one arguments: 75 people and 10,000 trials              
+...   should produce valid outputs of 99.99%                                     
+=============================================================================     
+0.9997198781738
+96.3600
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #7                                                                           
+... checking running with one arguments: 50 people and 10,000 trials              
+...   should produce valid outputs of 97.04%                                     
+=============================================================================     
+0.97037357957
+96.3600
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #8                                                                           
+... checking running with one arguments: 25 people and 1,000 trials               
+...   should produce valid outputs of 56.87%                                     
+=============================================================================     
+0.5686997039
+96.3600
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #9                                                                           
+... checking running with one arguments: 10 people and 1,000,000 trials           
+...   should produce valid outputs of 11.69%                                     
+=============================================================================     
+0.1169481777
+99.963600
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #10                                                                          
+... checking running with one arguments: 30 people and 10,000,000 trials          
+...   should produce valid outputs of 70.63%                                     
+...   should also get message that 'this will take a while'                       
+=============================================================================     
+0.7063162427
+99.9963600
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #11                                                                          
+... checking running with bogus second argument on command line                   
+...   should either throw exceptions which will not appear in the output file     
+...     but which should be caught to keep the test program running               
+...   or preferably output error messages which SHOULD appear there then quit     
+=============================================================================     
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #12                                                                          
+... checking running with two bogus argument values on command line               
+...   should either throw exceptions which will not appear in the output file     
+...     but which should be caught to keep the test program running               
+...   or preferably output error messages which SHOULD appear there then quit     
+=============================================================================     
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #13                                                                          
+... checking running with one arguments to check default # experiments            
+...   should produce valid outputs of about 100%                                 
+=============================================================================     
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #14                                                                          
+... checking running with two arguments to check commanded # experiments          
+...   should produce valid outputs of 100%                                       
+=============================================================================     
+0.9999996927510721
+99.70515811
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #15                                                                          
+... checking running with one arguments to check person count == 365              
+...   should produce valid outputs of 100%                                       
+=============================================================================     
+1.000000000000000000000000000000000000000
+96.3600
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #16                                                                          
+... checking running with one arguments: 77 people and 10,000 trials              
+...   should produce valid outputs of 99.99%                                     
+=============================================================================     
+0.9998237792438
+96.3600
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #17                                                                          
+... checking running with one arguments: 37 people and 10,000 trials              
+...   should produce valid outputs of 84.87%                                     
+=============================================================================     
+0.8487340082
+96.3600
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #18                                                                          
+... checking running with one arguments: 37 people and 1,000 trials               
+...   should produce valid outputs of 84.87%                                     
+=============================================================================     
+0.8487340082
+66.300
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #19                                                                          
+... checking running with one arguments: 37 people and 1,000,000 trials           
+...   should produce valid outputs of 84.87%                                     
+=============================================================================     
+0.8487340082
+99.963600
+.                                                                                 
+.                                                                                 
+=============================================================================     
+TEST #20                                                                          
+... checking running with one arguments: 37 people and 1,000,000 trials           
+...   should produce valid outputs of 84.87%                                     
+...   should also get message that 'this will take a while'                       
+=============================================================================     
+0.8487340082
+99.963600
+=====================================================                             
+Testing for Homework # 07 COMPLETED!                                              
+=====================================================                             
